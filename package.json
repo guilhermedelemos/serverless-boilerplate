@@ -1,0 +1,22 @@
+{
+  "name": "serverless-boilerplate",
+  "version": "1.0.0",
+  "description": "Serverless Framework Template",
+  "author": "Guilherme de Lemos <guilherme.eti@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "serverless-bundle test",
+    "lint": "eslint src/**",
+    "license": "license-checker --production --summary --exclude 'CC-BY-3.0' --failOn 'GPL'"
+  },
+  "dependencies": {
+    "uuid": "^8.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "license-checker": "^25.0.1",
+    "serverless-bundle": "^2.0.0"
+  }
+}
