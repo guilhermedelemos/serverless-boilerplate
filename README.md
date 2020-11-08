@@ -10,6 +10,7 @@ $ yarn install
 
 ## TO DO
 
+- [X] Pack each lambda in a single file
 - [ ] Logging
 - [ ] Minify / Uglyfy
 - [ ] VPC / Least privilege

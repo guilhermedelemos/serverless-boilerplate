@@ -7,13 +7,16 @@
   "scripts": {
     "test": "serverless-bundle test",
     "lint": "eslint src/**",
-    "license": "license-checker --production --summary --exclude 'CC-BY-3.0' --failOn 'GPL'"
+    "license": "license-checker --production --summary --exclude 'CC-BY-3.0' --failOn 'GPL'",
+    "release": "standard-version"
   },
   "dependencies": {
     "aws-sdk": "^2.787.0",
     "uuid": "^8.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^8.1.0",
     "babel-plugin-transform-runtime": "^6.23.0",
@@ -22,9 +25,16 @@
     "eslint": "^7.5.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
+    "husky": "^4.3.0",
     "license-checker": "^25.0.1",
     "serverless-bundle": "^2.0.0",
     "serverless-pseudo-parameters": "^2.5.0",
+    "standard-version": "^9.0.0",
     "webpack": "^4.44.2"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   }
 }
