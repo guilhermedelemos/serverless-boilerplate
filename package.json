@@ -8,7 +8,8 @@
     "test": "serverless-bundle test",
     "lint": "eslint src/**",
     "license": "license-checker --production --summary --exclude 'CC-BY-3.0' --failOn 'GPL'",
-    "release": "standard-version"
+    "release": "standard-version",
+    "commit": "cz"
   },
   "dependencies": {
     "aws-sdk": "^2.787.0",
@@ -22,6 +23,7 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
+    "commitizen": "^4.2.2",
     "eslint": "^7.5.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.0",
